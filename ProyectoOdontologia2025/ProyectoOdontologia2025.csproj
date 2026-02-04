@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F105C030-833E-4187-BDE8-D928B2F7FDE7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProyectoOdontologia2025</RootNamespace>
+    <AssemblyName>ProyectoOdontologia2025</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.LiveShare, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.VisualStudio.LiveShare.1.1.57\lib\net461\Microsoft.VisualStudio.LiveShare.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManMateriales06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManMateriales06.Designer.cs">
+      <DependentUpon>frmManMateriales06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManProveedores07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManProveedores07.Designer.cs">
+      <DependentUpon>frmManProveedores07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManTrat08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManTrat08.Designer.cs">
+      <DependentUpon>frmManTrat08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManUser04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManUser04.Designer.cs">
+      <DependentUpon>frmManUser04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConCita05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConCita05.Designer.cs">
+      <DependentUpon>frmConCita05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConCons02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConCons02.Designer.cs">
+      <DependentUpon>frmConCons02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConCoti09.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConCoti09.Designer.cs">
+      <DependentUpon>frmConCoti09.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConDiag03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConDiag03.Designer.cs">
+      <DependentUpon>frmConDiag03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConDoct06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConDoct06.Designer.cs">
+      <DependentUpon>frmConDoct06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConEmpl07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConEmpl07.Designer.cs">
+      <DependentUpon>frmConEmpl07.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConEval08.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConEval08.Designer.cs">
+      <DependentUpon>frmConEval08.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConPaci01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConPaci01.Designer.cs">
+      <DependentUpon>frmConPaci01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConPago10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConPago10.Designer.cs">
+      <DependentUpon>frmConPago10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConSegu04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConSegu04.Designer.cs">
+      <DependentUpon>frmConSegu04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManDoct05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManDoct05.Designer.cs">
+      <DependentUpon>frmManDoct05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManEmpl03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManEmpl03.Designer.cs">
+      <DependentUpon>frmManEmpl03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManPaci02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManPaci02.Designer.cs">
+      <DependentUpon>frmManPaci02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmManSegu01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmManSegu01.Designer.cs">
+      <DependentUpon>frmManSegu01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProCoti05.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProCoti05.Designer.cs">
+      <DependentUpon>frmProCoti05.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProDiag02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProDiag02.Designer.cs">
+      <DependentUpon>frmProDiag02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProEval04.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProEval04.Designer.cs">
+      <DependentUpon>frmProEval04.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProRegi01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProRegi01.Designer.cs">
+      <DependentUpon>frmProRegi01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProRegi03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProRegi03.Designer.cs">
+      <DependentUpon>frmProRegi03.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProRegi06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProRegi06.Designer.cs">
+      <DependentUpon>frmProRegi06.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConCita05.resx">
+      <DependentUpon>frmConCita05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConCons02.resx">
+      <DependentUpon>frmConCons02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConCoti09.resx">
+      <DependentUpon>frmConCoti09.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConDiag03.resx">
+      <DependentUpon>frmConDiag03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConDoct06.resx">
+      <DependentUpon>frmConDoct06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConEmpl07.resx">
+      <DependentUpon>frmConEmpl07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConEval08.resx">
+      <DependentUpon>frmConEval08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConPaci01.resx">
+      <DependentUpon>frmConPaci01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConPago10.resx">
+      <DependentUpon>frmConPago10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConSegu04.resx">
+      <DependentUpon>frmConSegu04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManDoct05.resx">
+      <DependentUpon>frmManDoct05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManEmpl03.resx">
+      <DependentUpon>frmManEmpl03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManMateriales06.resx">
+      <DependentUpon>frmManMateriales06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManPaci02.resx">
+      <DependentUpon>frmManPaci02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManProveedores07.resx">
+      <DependentUpon>frmManProveedores07.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManSegu01.resx">
+      <DependentUpon>frmManSegu01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManTrat08.resx">
+      <DependentUpon>frmManTrat08.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManUser04.resx">
+      <DependentUpon>frmManUser04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProCoti05.resx">
+      <DependentUpon>frmProCoti05.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProDiag02.resx">
+      <DependentUpon>frmProDiag02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProEval04.resx">
+      <DependentUpon>frmProEval04.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProRegi01.resx">
+      <DependentUpon>frmProRegi01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProRegi03.resx">
+      <DependentUpon>frmProRegi03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProRegi06.resx">
+      <DependentUpon>frmProRegi06.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
